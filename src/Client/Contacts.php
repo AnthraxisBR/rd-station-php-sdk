@@ -4,7 +4,7 @@
 namespace AnthraxisBR\Client;
 
 
-use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\ResponseInterface;
 
 class Contacts extends RDClient
 {
@@ -16,19 +16,19 @@ class Contacts extends RDClient
     private $uriRoute = '/platform/contacts';
 
 
-    public function uuid(string $uuid) : Response
+    public function uuid(string $uuid) : ResponseInterface
     {
         $this->prepare((string) '/' . $uuid);
         return $this->get($this->getUrl());
     }
 
-    public function email(string $email) : Response
+    public function email(string $email) : ResponseInterface
     {
         $this->prepare((string) '/email:' . $email);
         return $this->get($this->getUrl());
     }
 
-    public function updateUuid(string $uuid, array $data) : Response
+    public function updateUuid(string $uuid, array $data) : ResponseInterface
     {
         $this->prepare((string) '/' . $uuid);
         return $this->get($this->getUrl(),
@@ -38,7 +38,7 @@ class Contacts extends RDClient
         );
     }
 
-    public function updateIdentifier(string $identifier, string $value, array $data) : Response
+    public function updateIdentifier(string $identifier, string $value, array $data) : ResponseInterface
     {
         $this->prepare((string) '/' . $identifier . ':' . $value);
         return $this->get($this->getUrl(),

@@ -35,10 +35,11 @@ class Client extends \GuzzleHttp\Client
      * Prepare request URI from
      * @param string $uriPart
      */
-    public function prepare(string $uriPart) : void
+    public function prepare(string $uriPart = '') : void
     {
         $this->setUrl((string) $this->getUri() . $this->getUriRoute() . $uriPart);
     }
+
 
     /**
      * @return array

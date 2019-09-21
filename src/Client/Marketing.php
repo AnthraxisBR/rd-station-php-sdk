@@ -4,7 +4,7 @@
 namespace AnthraxisBR\Client;
 
 
-use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\ResponseInterface;
 
 class Marketing extends RDClient
 {
@@ -15,19 +15,10 @@ class Marketing extends RDClient
     private $uriRoute = '/marketing';
 
     /**
-     * Marketing constructor.
-     * @param array $config
-     */
-    public function __construct(array $config = [])
-    {
-        parent::__construct($config);
-    }
-
-    /**
      * Returns the account name from your RD Station Marketing account.
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function accountInfo() : Response
+    public function accountInfo() : ResponseInterface
     {
         $this->prepare('/account_info');
         return $this->get($this->getUrl());
@@ -37,7 +28,7 @@ class Marketing extends RDClient
      * Returns the RD Station Marketing tracking code so it can be embedded on websites or CMS.
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function trackingCode() : Response
+    public function trackingCode() : ResponseInterface
     {
         $this->prepare('/tracking_code');
         return $this->get($this->getUrl());
