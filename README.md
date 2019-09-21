@@ -1,1 +1,1 @@
-# healthcheck-plug
+# RD Station PHP SDK
