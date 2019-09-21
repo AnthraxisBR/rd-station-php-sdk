@@ -1,1 +1,1 @@
-# RD Station PHP SDK
+# Unofficial RD Station PHP SDK
