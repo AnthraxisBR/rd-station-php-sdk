@@ -6,6 +6,11 @@ namespace AnthraxisBR\Client;
 
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * @see https://developers.rdstation.com/pt-BR/reference/account_infos
+ * Class Marketing
+ * @package AnthraxisBR\Client
+ */
 class Marketing extends RDClient
 {
 

@@ -6,6 +6,11 @@ namespace AnthraxisBR\Client;
 
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * @see https://developers.rdstation.com/pt-BR/reference/contacts/funnels
+ * Class ContactsFunnels
+ * @package AnthraxisBR\Client
+ */
 class ContactsFunnels extends RDClient
 {
 
