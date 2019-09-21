@@ -1,0 +1,21 @@
+{
+    "name": "anthraxisbr/rd-php-sdk",
+    "description": "Unofficial RD Station PHP SDK",
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "vlucas/phpdotenv": "^3.6"
+    },
+    "authors": [
+        {
+            "name": "Gabriel Mourão",
+            "email": "gabrielmouraodemelo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "AnthraxisBR\\": "src"
+        }
+    }
+}
