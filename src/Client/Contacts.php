@@ -15,20 +15,35 @@ class Contacts extends RDClient
      */
     private $uriRoute = '/platform/contacts';
 
-
-    public function uuid(string $uuid) : ResponseInterface
+    /**
+     * Returns data about a specific Contact
+     * @param string $uuid
+     * @return ResponseInterface
+     */
+    public function getContactFromUuid(string $uuid) : ResponseInterface
     {
         $this->prepare((string) '/' . $uuid);
         return $this->get($this->getUrl());
     }
 
-    public function email(string $email) : ResponseInterface
+    /**
+     * Returns data about a specific Contact
+     * @param string $email
+     * @return ResponseInterface
+     */
+    public function getContactFromEmail(string $email) : ResponseInterface
     {
         $this->prepare((string) '/email:' . $email);
         return $this->get($this->getUrl());
     }
 
-    public function updateUuid(string $uuid, array $data) : ResponseInterface
+    /**
+     * Updates the properties of a Contact.
+     * @param string $uuid
+     * @param array $data
+     * @return ResponseInterface
+     */
+    public function updateUserFromUuid(string $uuid, array $data) : ResponseInterface
     {
         $this->prepare((string) '/' . $uuid);
         return $this->get($this->getUrl(),
@@ -38,6 +53,13 @@ class Contacts extends RDClient
         );
     }
 
+    /**
+     * With an UPSERT like behavior, this endpoint is capable of both updating the properties of a Contact or creating a new Contact. Whatever is used as an identifier cannot appear in the request payload as a field. This will result in a BAD_REQUEST error.
+     * @param string $identifier
+     * @param string $value
+     * @param array $data
+     * @return ResponseInterface
+     */
     public function updateIdentifier(string $identifier, string $value, array $data) : ResponseInterface
     {
         $this->prepare((string) '/' . $identifier . ':' . $value);
