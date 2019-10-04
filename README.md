@@ -3,7 +3,7 @@
 
 Fiz esse projeto como parte do 'Gerador de SDK automático'.
 
-Como não tenho nenhuma conta na RD, essa SDK nunca foi testada em produção.
+Como não tenho nenhuma conta na RD, essa SDK nunca foi testada em produção (até 03 de outubro 2019).
 
 ## Instalação
 
@@ -15,7 +15,7 @@ Crie o arquivo '.env'
 
     cp .env.example .env
     
-Preencha os valores do arquivo com sua chave e url de redirecionamento.
+Preencha os valores do arquivo com seu client id e client secret, e sua url de redirecionamento.
 
 ## Gerar o Access Token
 
