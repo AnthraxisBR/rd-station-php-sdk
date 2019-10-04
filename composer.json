@@ -4,7 +4,8 @@
     "require": {
         "php": ">=7.1.0",
         "guzzlehttp/guzzle": "^6.3",
-        "vlucas/phpdotenv": "^3.6"
+        "vlucas/phpdotenv": "^3.6",
+        "phpunit/phpunit": "^8.4@dev"
     },
     "authors": [
         {
@@ -16,6 +17,11 @@
     "autoload": {
         "psr-4": {
             "AnthraxisBR\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
         }
     }
 }

@@ -26,6 +26,10 @@ class Client extends \GuzzleHttp\Client
      */
     private $args = [];
 
+    /**
+     * Client constructor.
+     * @param array $config
+     */
     public function __construct(array $config = [])
     {
         parent::__construct($config);
