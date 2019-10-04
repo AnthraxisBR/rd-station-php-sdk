@@ -1,15 +1,15 @@
-##Unofficial RD Station PHP SDK
+## Unofficial RD Station PHP SDK
 
 
 Fiz esse projeto como parte do 'Gerador de SDK automático'.
 
 Como não tenho nenhuma conta na RD, essa SDK nunca foi testada em produção.
 
-##Instalação
+## Instalação
 
     composer require composer require anthraxisbr/rd-php-sdk
 
-##Configuração
+## Configuração
 
 Crie o arquivo '.env'
 
@@ -17,7 +17,7 @@ Crie o arquivo '.env'
     
 Preencha os valores do arquivo com sua chave e url de redirecionamento.
 
-##Gerar o Access Token
+## Gerar o Access Token
 
 https://developers.rdstation.com/pt-BR/authentication
 
@@ -58,7 +58,7 @@ Localizando Tracking Code:
     $AccountInfoClient->getTrackingCode()
 
 
-##Contatos
+## Contatos
 
 Instanciando o client:
 
@@ -86,7 +86,7 @@ Atualizando o usuário pelo e-mail:
     
     $ContactsClient->updateUserFromEmail('email', $data);
 
-##Funil de Contato
+## Funil de Contato
 
 Instanciando o client:
     
@@ -103,7 +103,7 @@ Recuperar os funis atrelados a um contato pelo e-mail:
 
     $ContactsFunnelsClient->updateUserFunnel($funnelName, $uuid ,$email, $data);
 
-giEventos
+## Eventos
 
 O disparo de evento, é chamado de trigger:
 
@@ -174,7 +174,7 @@ Interação de midia:
 
 
 
-##TODO
+## TODO
 
  - Melhorar documentação
  - Implementar os testes das classes
