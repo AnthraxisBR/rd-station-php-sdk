@@ -1,7 +1,7 @@
 ## Unofficial RD Station PHP SDK
 
 
-Fiz esse projeto como parte do 'Gerador de SDK automático'.
+Fiz esse projeto como parte de outro projeto 'Gerador de SDK automático', que ainda não está pronto para ser publicado.
 
 Como não tenho nenhuma conta na RD, essa SDK nunca foi testada em produção (até 03 de outubro 2019).
 
