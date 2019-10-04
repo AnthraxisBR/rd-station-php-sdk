@@ -134,21 +134,21 @@ Nova oportunidade:
        
 Ganhar Oportunidade:
     
-    $Events->wonOpportunity(${
+    $Events->wonOpportunity({
         "email": "email@email.com",
         "funnel_name": "default"
     });
     
 Perder Oportunidade:
     
-    $Events->lostOpportunity(${
+    $Events->lostOpportunity({
         "email": "email@email.com",
         "funnel_name": "default"
     });
       
 Receber pedido:
     
-    $Events->orderPlaced(${
+    $Events->orderPlaced({
         "email": "email@email.com",
         "funnel_name": "default"
     });
