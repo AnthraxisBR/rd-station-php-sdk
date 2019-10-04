@@ -127,54 +127,90 @@ Exemplo do corpo
 
 Nova oportunidade:
     
-    $Events->newOpportunity($data);
+    $Events->newOpportunity({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
        
 Ganhar Oportunidade:
     
-    $Events->wonOpportunity($data);
+    $Events->wonOpportunity(${
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
     
 Perder Oportunidade:
     
-    $Events->lostOpportunity($data);
+    $Events->lostOpportunity(${
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
       
 Receber pedido:
     
-    $Events->orderPlaced($data);
+    $Events->orderPlaced(${
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
       
 Incluir item no pedido:
     
-    $Events->orderPlacedItem($data);
+    $Events->orderPlacedItem({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
       
       
 Carrinho abandonado:
     
-    $Events->cartAbandoned($data);
+    $Events->cartAbandoned({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
       
     
 Item abandonado no carrinho:
     
-    $Events->cartAbandonedItem($data);
+    $Events->cartAbandonedItem({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
     
 Item abandonado no carrinho:
     
-    $Events->cartAbandonedItem($data);
+    $Events->cartAbandonedItem({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
 
 Chat iniciado:
 
-    $Events->chatStarted($data);
+    $Events->chatStarted({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
 
 Chat Encerrado:
 
-    $Events->chatFinished($data);
+    $Events->chatFinished({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
 
 Ligação finalizada:
 
-    $Events->callFinished($data);
+    $Events->callFinished({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
 
 Interação de midia:
 
     
-    $Events->mediaPlaybackStarted($data);
+    $Events->mediaPlaybackStarted({
+        "email": "email@email.com",
+        "funnel_name": "default"
+    });
 
 
 
