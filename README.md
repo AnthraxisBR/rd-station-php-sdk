@@ -4,7 +4,7 @@
 
 Fiz esse projeto como parte de outro projeto 'Gerador de SDK automático', que ainda não está pronto para ser publicado.
 
-Veja um exemplo de uma SDK gerada totalmente via *BIA* (meu robo e base do gerador) na documentação da Google Cloud Platform: https://github.com/AnthraxisBR/generated-google-cloud-platform-php-sdk.
+Veja um exemplo de uma SDK gerada totalmente via **BIA** (meu robo e base do gerador) na documentação da Google Cloud Platform: https://github.com/AnthraxisBR/generated-google-cloud-platform-php-sdk.
 
 Como não tenho nenhuma conta na RD, essa SDK nunca foi testada em produção (até 03 de outubro 2019).
 
